@@ -29,6 +29,10 @@ function App() {
     fetchData();
   }, []);
 
+  useEffect(() => {
+    document.title = "Na Pista! SALVADOR";
+  }, []);
+
   const normalizeText = (text: string) => {
     return text
       .normalize('NFD')
@@ -59,6 +63,7 @@ function App() {
 
   return (
     <div className="min-h-screen bg-gray-50">
+      <img src="/assets/pedroitan_httpss.mj.run4ao2sxXT9eA_top_banner_for_a_cultural_ag_e1656982-08be-4130-a8da-87641fcf13e8.png" alt="Top Banner" />
       {/* Header */}
       <header className="bg-white shadow-sm">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-4">
